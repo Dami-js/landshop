@@ -1,0 +1,12 @@
+.page-wrapper {
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 100vh;
+  background-color: $bg-color;
+  &.bg-img-one {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      $image-hone-one center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}

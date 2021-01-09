@@ -1,0 +1,12 @@
+.btn {
+  border-radius: $button-border-radius;
+  padding: calc(#{$btn-padding-y-lg} + 2px) $btn-padding-x-lg;
+  &-primary,
+  &-secondary {
+    color: $white;
+    &:focus,
+    &:active {
+      color: $white;
+    }
+  }
+}

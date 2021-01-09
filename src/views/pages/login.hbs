@@ -1,0 +1,37 @@
+{{#> components/wrapper class="bg-img-one"}}
+    <div class="mt-5">
+      {{> components/logo}}
+    </div>
+    <div class="text-center mb-5 mt-4 text-white">
+      <p>Everyone deserves <br class="d-block d-sm-none" /> affordabale properties</p>
+    </div>
+    <div class="login-form-container mb-4 mt-5">
+      <div class="signin-title">
+        <p>Sign in</p>
+      </div>
+      <form>
+        <div class="card login-form-card">
+          <div class="card-body">
+            <div class="mb-4">
+              <label class="form-label text-white" for="username">Email or phone</label>
+              <input type="text" class="form-control" id="username" />
+            </div>
+            <div class="mb-4">
+              <label class="form-label text-white" for="password">Password</label>
+              <input type="password" class="form-control" id="password" />
+            </div>
+            <div class="d-grid">  
+              <button type="submit" class="btn btn-primary fw-bolder">Sign in</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="text-center mb-1">
+      <a href="/forgot-password" class="link-secondary text-white text-decoration-none fw-bolder">Forgot Password</a>
+    </div>
+    <div class="text-white text-center d-flex align-items-center justify-content-center mb-5">
+      <p class="mb-0 me-2">Don't have an account yet?</p>
+      <a href="#!" class="link-secondary text-white text-decoration-none fw-bolder">Sign Up</a>
+    </div>
+{{/components/wrapper}}

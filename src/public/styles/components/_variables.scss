@@ -1,0 +1,24 @@
+$primary: #f48120;
+$secondary: #17b28d;
+$bg-color: #f4f4f4;
+$text-color: #808184;
+
+$button-border-radius: 12px;
+$card-border-radius: 15px;
+
+$mobile-title-bar-height: 70px;
+
+// $theme-colors: (
+//   "primary": $primary,
+//   "secondary": $secondary
+// );
+
+$custom-colors: (
+  "font-color": $text-color,
+  "primary": $primary,
+  "secondary": $secondary
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+$image-hone-one: url("/images/home-image-one.jpeg");

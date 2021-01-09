@@ -1,0 +1,33 @@
+<div class="user-details__head">
+
+  <div class="user-details__head-image">
+    <div class="image-cont">
+      <div {{#if edit}} role="button" data-bs-toggle="modal" data-bs-target="#uploadModal" {{/if}}>
+        {{> components/profile-picture 
+          img="https://picsum.photos/id/1027/40"
+          size="large"}}
+      </div>
+      <a href="/dashboard?edit=true" class="link-font-color d-block text-decoration-none mt-2">Edit</a>
+    </div>
+  </div>
+
+  <div class="user-details__head-bio">
+    <p class="name d-flex align-items-end">Sodeinde Oladapo
+      {{#if edit}}
+      {{> components/edit-pen}}
+      {{/if}}
+    </p>
+    <div class="contact-details">
+      <p class="d-flex align-items-end">dapsiny@gmail.com 
+        {{#if edit}}
+          {{> components/edit-pen}}
+        {{/if}}
+      </p>
+      <p class="d-flex align-items-end">+234 805 6789 654
+        {{#if edit}}
+          {{> components/edit-pen }}
+        {{/if}}
+      </p>
+    </div>
+  </div>
+</div>
