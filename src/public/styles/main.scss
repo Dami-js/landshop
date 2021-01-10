@@ -16,8 +16,17 @@
 @import "./components/inputs";
 @import "./components/cards";
 @import "./components/loader";
+@import "./components/product-card";
 
 // pages
 @import "./pages/login";
 @import "./pages/welcome";
 @import "./pages/dashboard";
+@import "./pages/product.view";
+
+.logo {
+  display: inline-block;
+  img {
+    width: 150px;
+  }
+}

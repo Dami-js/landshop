@@ -1,10 +1,10 @@
-<div class="mobile-title-bar">
+<div class="mobile-title-bar {{position}} {{bg}} " id="{{id}}">
     <div class="container">
       <div class="mobile-title-bar__content">
         {{#if back}}
-        <a href="{{back}}" class="arrow"> <i class="fas fa-chevron-left"></i> </a>
+        <a href="{{back}}" class="arrow {{#if font-color}} {{font-color}} {{else}} link-font-color {{/if}}"> <i class="fas fa-chevron-left"></i> </a>
         {{/if}}
-        <a href="#" class="link-font-color title text-capitalize">{{title}}</a>
+        <a href="#" class="{{#if font-color}} {{font-color}} {{else}} link-font-color {{/if}} title text-capitalize">{{title}}</a>
         <div class="flex-grow-1"></div>
         <div class="profile-img">
           {{> components/profile-picture img=img }}

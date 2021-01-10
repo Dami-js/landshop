@@ -1,0 +1,85 @@
+{{#> components/dashboard-layout class="product-view-page mobile"}}
+    <div class="banner">
+      <img src="/images/Land-Image.png" class="product-img" alt="">
+      {{> components/mobile-title-bar img="https://picsum.photos/id/1027/40" title="Land" back="/land" font-color="text-white" position="fixed" id="productView" }}
+      <div class="product-name">
+        <div class="container">
+          <div class="ps-3">
+            <p class="text-white mb-0 text-capitalize fs-5">celebrity haven</p>
+            <p class="small text-white mb-0">(Lekki Free Trade Zone) Iba-Oloja</p>
+            <button class="btn btn-primary btn-sm mt-2" data-bs-toggle="modal" data-bs-target="#buyModal">Buy Land</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <div class="product-view-content mobile">
+    <div class="mobile-panel card border-0">
+      <div class="container">
+        <div class="py-4">
+          <div class="product-feature-row border-bottom px-4 py-2">
+            <p>Plots</p>
+            <p>10000 plot(s) N3,000,000/plot</p>
+          </div>
+          <div class="product-feature-row border-bottom px-4 py-2">
+            <p>Sqms</p>
+            <p>10000 plot(s) N5,000/sqm</p>
+          </div>
+          <div class="product-feature-row border-bottom px-4 py-2 pb-4">
+            <p>Title</p>
+            <p>Excision</p>
+          </div>
+          <div class="product-feature-row border-bottom px-4 pt-2 pb-4">
+            <p>Neighbourhood</p>
+            <p>Lekki Free Trade Zone</p>
+          </div>
+          <div class="product-feature-row border-bottom px-4 py-2">
+            <p>Address</p>
+            <p>Iba-Oloja, Ibejus-Lekki, Nigeria</p>
+          </div>
+        </div>
+        <div>
+          <p class="text-font-color">Celebrity Haven is located in Iba-oloja, Ibeju-Lekki within the most sought-after investment destination.</p>
+
+          <p class="text-font-color">It is positioned to provide the infrastructural landscape that aids further development of the entertainment industry. The plan includes movie, animation, and music studios, with iconic architecture, exquisite and exclusive living spaces, and serene environment to aid beautiful productions. Just like Hollywood, California, Celebrity Haven will provide an ideal environment to incubate entertainment projects and provide a home for the stars of the industry.</p>
+        </div>
+        <div class="mt-4">
+          <p class="text-font-color fw-bolder">Neighbourhood</p>
+          <p class="text-font-color mb-1">Dangote Refinery</p>
+          <p class="text-font-color mb-1">Lekki Free Trade Zone (LFTZ)</p>
+          <p class="text-font-color mb-1">Lekki Deep Sea port</p>
+          <p class="text-font-color mb-1">Power oil co.</p>
+        </div>
+        <div class="mt-4">
+          <div class=" bg-secondary">
+            <p class="text-white fw-bolder p-3">Features</p>
+            <div class="product-features">
+              {{> components/product-feature image="/images/street-light.png" name="Street Lights"}}
+
+              {{> components/product-feature image="/images/shopping-mall.png" name="Modern Shopping Malls"}}
+
+              {{> components/product-feature image="/images/central-electric.png" name="Central Electricity Connection"}}
+
+              {{> components/product-feature image="/images/central-sewage.png" name="Central Sewage"}}
+
+              {{> components/product-feature image="/images/paved-road.png" name="Paved Roads"}}
+
+              {{> components/product-feature image="/images/recreational.png" name="Recreational Facilities"}}
+
+              {{> components/product-feature image="/images/electonic-state.png" name="Electronic Estate Gate"}}
+
+              {{> components/product-feature image="/images/street-camera.png" name="Street Cameras (CCTV)"}}
+              
+            </div>
+          </div>
+        </div>
+        <div class="d-grid mt-3">
+          <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#buyModal">Buy Land</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+{{/components/dashboard-layout}}
+
+{{> components/modals/buy-land-modal}}

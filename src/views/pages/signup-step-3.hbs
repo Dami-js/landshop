@@ -1,0 +1,50 @@
+{{#> components/wrapper class="bg-img-one signup"}}
+  <div class="d-md-none">
+
+    <div class="d-block mb-5 px-3">
+      <a href="/signup?step=2" class="text-white"><i class="fas fa-chevron-left"></i></a>
+    </div>
+    <div class="mt-5 text-center">
+      <div class="signin-title">
+        <p>Sign up</p>
+      </div>
+    </div>
+    <div class="text-center mb-2 text-white">
+      <p>Join over 1000 other investors</p>
+    </div>
+    <div class="login-form-container mb-4">
+      
+      <form>
+        <div class="login-form-card">
+          <div class="card-body">
+            <div class="mb-4">
+              <label class="form-label text-white">Referrer code (optional_</label>
+              <input type="text" class="form-control" placeholder="Enter Referrer Code" />
+            </div>
+            <div class="mb-4">
+              <label class="form-label text-white">Password</label>
+              <input type="password" class="form-control" placeholder="Password" aria-describedby="passwordHelp" />
+              <div id="passwordHelp" class="form-text text-white">Not less than 6 characters</div>
+            </div>
+            <div class="d-flex justify-content-end">
+              <p class="mb-0 small text-white">3 of 3</p>
+            </div>
+            <div class="my-2">
+              {{> components/progress-bar width="100"}}
+            </div>
+            <div class="d-grid">  
+              <button type="submit" class="btn btn-secondary fw-bolder">Done</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    {{!-- <div class="text-center mb-1">
+      <a href="/forgot-password" class="link-secondary text-white text-decoration-none fw-bolder">Forgot Password</a>
+    </div> --}}
+    <div class="text-white text-center d-flex align-items-center justify-content-center mb-5">
+      <p class="mb-0 me-2">Already have an account?</p>
+      <a href="/login" class="link-secondary text-white text-decoration-none fw-bolder">Sign In</a>
+    </div>
+  </div>
+{{/components/wrapper}}

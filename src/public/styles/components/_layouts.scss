@@ -10,3 +10,14 @@
     background-repeat: no-repeat;
   }
 }
+
+.w-40 {
+  width: 40%;
+}
+
+.web-intro-card {
+  min-width: 40%;
+  @include media-breakpoint-only(md) {
+    width: 80%;
+  }
+}

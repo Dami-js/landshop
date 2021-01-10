@@ -25,6 +25,23 @@ class HomeController {
    * @param {Request} req 
    * @param {Response} res 
    */
+  signup(req, res) {
+
+    const { step } = req.query;
+    if (step == 3) {
+      res.render('pages/signup-step-3')
+    } else if (step == 2) {
+      res.render('pages/signup-step-2')
+    } else {
+      res.render('pages/signup')
+    }
+  }
+
+  /**
+   * 
+   * @param {Request} req 
+   * @param {Response} res 
+   */
   forgotPassword(req, res) {
     res.render('pages/forgot-password')
   }
@@ -55,6 +72,66 @@ class HomeController {
    */
   welcome(req, res) {
     res.render('pages/welcome')
+  }
+
+  /**
+   * Welcome page route
+   * 
+   * @param {Request} req 
+   * @param {Response} res 
+   */
+  land(req, res) {
+    res.render('pages/admin/land')
+  }
+
+  /**
+   * Welcome page route
+   * 
+   * @param {Request} req 
+   * @param {Response} res 
+   */
+  house(req, res) {
+    res.render('pages/admin/house')
+  }
+
+  /**
+   * Welcome page route
+   * 
+   * @param {Request} req 
+   * @param {Response} res 
+   */
+  landView(req, res) {
+    res.render('pages/admin/land-view')
+  }
+
+  /**
+   * Welcome page route
+   * 
+   * @param {Request} req 
+   * @param {Response} res 
+   */
+  houseView(req, res) {
+    res.render('pages/admin/house-view')
+  }
+
+  /**
+   * Welcome page route
+   * 
+   * @param {Request} req 
+   * @param {Response} res 
+   */
+  investment(req, res) {
+    res.render('pages/admin/investment')
+  }
+
+  /**
+   * Welcome page route
+   * 
+   * @param {Request} req 
+   * @param {Response} res 
+   */
+  transfer(req, res) {
+    res.render('pages/admin/transfer')
   }
 
   /**

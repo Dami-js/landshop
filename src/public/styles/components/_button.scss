@@ -1,6 +1,9 @@
 .btn {
   border-radius: $button-border-radius;
   padding: calc(#{$btn-padding-y-lg} + 2px) $btn-padding-x-lg;
+  &-sm {
+    padding: $btn-padding-y-sm $btn-padding-x-sm;
+  }
   &-primary,
   &-secondary {
     color: $white;
