@@ -1,0 +1,32 @@
+@import "../bootstrap/scss/functions";
+@import "../bootstrap/scss/variables";
+@import "../bootstrap/scss/mixins";
+
+// custom variables
+@import "./components/variables";
+
+@import "../bootstrap/scss/bootstrap.scss";
+
+// components
+@import "./components/layouts";
+@import "./components/dashboard-layout";
+
+// customs
+@import "./components/button";
+@import "./components/inputs";
+@import "./components/cards";
+@import "./components/loader";
+@import "./components/product-card";
+
+// pages
+@import "./pages/login";
+@import "./pages/welcome";
+@import "./pages/dashboard";
+@import "./pages/product.view";
+
+.logo {
+  display: inline-block;
+  img {
+    width: 150px;
+  }
+}

@@ -1,0 +1,102 @@
+{{#> components/dashboard-layout class="land-page "}}
+  <div class="bg-primary top-title-container position-fixed d-lg-none">
+    {{> components/mobile-title-bar img="https://picsum.photos/id/1027/40" title="Transfer" font-color="text-white" }}
+  </div>
+
+  <div class="mobile-search-container position-fixed bg-background d-lg-none">
+    <div class="container">
+      {{> components/search-bar placeholder="Search by customer or property name"}}
+    </div>
+  </div>
+
+  <div class="container py-5">
+    <p class="fs-4 text-font-color text-center mb-0">Transfer</p>
+  </div>
+
+  <div class="d-none d-lg-block pb-5">
+    <div class="container">
+      <div class="w-75 mx-auto">
+        {{> components/search-bar placeholder="Search by customer or property name"}}
+      </div>
+    </div>
+  </div>
+
+  <div class="d-lg-block d-none">
+    <div class="container">
+      <div class="card bg-secondary w-50 mx-auto border-0">
+        <div class="d-flex align-items-center justify-content-center py-2 px-4 text-white">
+          <p class="mb-0 me-4">Wallet Balance</p>
+          <p class="mb-0 fs-1">N67,000,000</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-content d-none d-lg-block">
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-between py-3">
+        <button class="btn btn-link text-font-color text-decoration-none"><< Previous</button>
+        <button class="btn btn-link text-font-color text-decoration-none">Next >></button>
+      </div>
+      <div class="table-responsive">
+        <table class="table">
+          <thead class="bg-primary text-white">
+            <tr>
+              <th scope="col" class="border-0 ps-5">Property</th>
+              <th scope="col" class="border-0">Number</th>
+              <th scope="col" class="border-0">Amount</th>
+              <th scope="col" class="border-0">Date</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="text-font-color">
+              <td class="pt-4">
+                <p class="fw-bolder text-font-color ps-5">Celebrity Haven</p>
+              </td>
+              <td class="fw-bolder pt-4">10000 plot(s)</td>
+              <td class="pt-4 text-primary">₦ 3,000,000</td>
+              <td class="pt-4">Nov 23rd 2020</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="d-flex align-items-center justify-content-between py-3">
+        <button class="btn btn-link text-font-color text-decoration-none"><< Previous</button>
+        <button class="btn btn-link text-font-color text-decoration-none">Next >></button>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-content mobile">
+    <div class="container">
+      <div class="d-lg-none">
+        <div class="card border-0 balance-card bg-secondary ">
+          <div class="card-header bg-transparent border-white py-3">
+            <p class="text-white mb-0 fs-6 text-center">Wallet Balance</p>
+          </div>
+          <div class="card-body">
+            <p class="text-white mb-0 fs-1 text-center">N67,000,00</p>
+          </div>
+        </div>
+        <div class="text-center p-5">
+          <p class="font-xl text-font-color">No transfers yet</p>
+        </div>
+        <div class="row g-3">
+          <div class="col-md-6">
+            {{> components/transfer-card}}
+          </div>
+          <div class="col-md-6">
+            {{> components/transfer-card}}
+          </div>
+          <div class="col-md-6">
+            {{> components/transfer-card}}
+          </div>
+          <div class="col-md-6">
+            {{> components/transfer-card}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+{{/components/dashboard-layout}}

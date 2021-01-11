@@ -1,0 +1,164 @@
+{{#> components/dashboard-layout class="dashboard-page"}}
+{{> components/mobile-title-bar img="https://picsum.photos/id/1027/40" title="Dashboard" back="/dashboard" }}
+
+<div class="d-none d-lg-block desktop">
+  <div class="container mt-5">
+    <div class="hero-section">
+      <div class="user-details-section w-25">
+        {{#> components/user-details}}
+          {{#*inline 'user-details-head'}}
+            {{> components/user-details-head edit=true}}
+          {{/inline}}
+          {{#*inline 'user-details-body'}}
+            {{> components/user-details-body edit=true}}
+          {{/inline}}
+        {{/components/user-details}}
+        <div class="text-center mt-3">
+          <a href="/dashboard" role="button" class="btn btn-primary btn-sm">Save</a>
+        </div>
+      </div>
+      <div class="user-balance-section">
+        <div class="d-grid gap-4 h-100">
+          <div class="card bg-secondary border-0">
+            <p class="fs-6">Wallet Balance</p>
+            <p class="fs-3">N67,000,000</p>
+          </div>
+          <div class="card border-0">
+            <p class="fs-6">Investments</p>
+            <p class="fs-4">No Investments yet</p>
+          </div>
+        </div>
+      </div>
+      <div class="banner-section">
+        <a href="#!">
+          <img src="/images/banner.png" alt="">
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="land-section bg-background-darker mt-5">
+    <div class="container">
+      <div class="text-center py-4">
+        <p class="fs-4 text-font-color mb-0">Available land and house</p>
+      </div>
+      <div class="lands pb-5">
+        <div class="row g-4">
+          <div class="col-md-3">
+            <a href="/land-view" class=" text-decoration-none">
+              {{> components/product-card 
+              name="celebrity haven" 
+              address="(Lekki Free Trade Zone) Iba-Oloja" 
+              image="/images/Land-Image.png" 
+              slug="Excision" 
+              qty-price="N3,000,000" 
+              qty-name="plot" 
+              size-price="N5,000" 
+              size-name="sqm"}}
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="/land-view" class=" text-decoration-none">
+              {{> components/product-card 
+              name="celebrity haven" 
+              address="(Lekki Free Trade Zone) Iba-Oloja" 
+              image="/images/Land-Image.png" 
+              slug="Excision" 
+              qty-price="N3,000,000" 
+              qty-name="plot" 
+              size-price="N5,000" 
+              size-name="sqm"}}
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="/land-view" class=" text-decoration-none">
+              {{> components/product-card 
+              name="celebrity haven" 
+              address="(Lekki Free Trade Zone) Iba-Oloja" 
+              image="/images/Land-Image.png" 
+              slug="Excision" 
+              qty-price="N3,000,000" 
+              qty-name="plot" 
+              size-price="N5,000" 
+              size-name="sqm"}}
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="/land-view" class=" text-decoration-none">
+              {{> components/product-card 
+              name="celebrity haven" 
+              address="(Lekki Free Trade Zone) Iba-Oloja" 
+              image="/images/Land-Image.png" 
+              slug="Excision" 
+              qty-price="N3,000,000" 
+              qty-name="plot" 
+              size-price="N5,000" 
+              size-name="sqm"}}
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="/land-view" class=" text-decoration-none">
+              {{> components/product-card 
+              name="celebrity haven" 
+              address="(Lekki Free Trade Zone) Iba-Oloja" 
+              image="/images/Land-Image.png" 
+              slug="Excision" 
+              qty-price="N3,000,000" 
+              qty-name="plot" 
+              size-price="N5,000" 
+              size-name="sqm"}}
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="/land-view" class=" text-decoration-none">
+              {{> components/product-card 
+              name="celebrity haven" 
+              address="(Lekki Free Trade Zone) Iba-Oloja" 
+              image="/images/Land-Image.png" 
+              slug="Excision" 
+              qty-price="N3,000,000" 
+              qty-name="plot" 
+              size-price="N5,000" 
+              size-name="sqm"}}
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="/land-view" class=" text-decoration-none">
+              {{> components/product-card 
+              name="celebrity haven" 
+              address="(Lekki Free Trade Zone) Iba-Oloja" 
+              image="/images/Land-Image.png" 
+              slug="Excision" 
+              qty-price="N3,000,000" 
+              qty-name="plot" 
+              size-price="N5,000" 
+              size-name="sqm"}}
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="d-flex flex-column min-vh-100  d-lg-none ">
+
+  <div class="container">
+    <div class="my-2"></div>
+    {{#> components/user-details}}
+      {{#*inline 'user-details-head'}}
+        {{> components/user-details-head edit=true}}
+      {{/inline}}
+      {{#*inline 'user-details-body'}}
+        {{> components/user-details-body edit=true}}
+      {{/inline}}
+    {{/components/user-details}}
+    <div class="text-center mt-3 mb-5">
+      <a href="/dashboard" role="button" class="btn btn-primary btn-sm rounded-pill py-2 px-4">Save</a>
+    </div>
+  </div>
+  {{> components/mobile-balance-container}}
+</div>
+{{/components/dashboard-layout}}
+
+{{> components/modals/upload-modal}}
+{{> components/modals/detail-modal value="edit me" }}

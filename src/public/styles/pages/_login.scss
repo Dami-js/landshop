@@ -1,0 +1,17 @@
+.signin-title {
+  text-align: center;
+  p {
+    font-size: 3rem;
+    color: $white;
+    line-height: 3.5rem;
+  }
+}
+
+.forgot-password-page {
+  .card {
+    &.login-form-card {
+      background-color: transparent;
+      border: none;
+    }
+  }
+}

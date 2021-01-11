@@ -1,0 +1,12 @@
+<div class="dashboard-layout {{class}}">
+  {{> components/desktop-navbar}}
+
+  <div class="dashboard-content {{#if fixedTitleBar}} padding {{/if}}">
+    {{> @partial-block }}
+  </div>
+
+  {{> components/mobile-nav}}
+</div>
+  {{#> scripts-block}}
+  {{!-- INSERT CUSTOM SCRIPTS --}}
+  {{/scripts-block}}

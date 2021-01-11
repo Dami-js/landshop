@@ -1,0 +1,165 @@
+%mobile-nav {
+  .mobile-nav {
+    background-color: $white;
+    position: fixed;
+    bottom: 1rem;
+    width: 90%;
+    left: 5%;
+    height: $mobile-nav-height;
+    box-shadow: 0px 3px 6px #d0d0d0;
+    border-radius: calc(#{$button-border-radius} + 4px);
+
+    // nav item list
+    &__item-list {
+      padding: 0 1rem;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      // grid-template-columns: repeat(4, 1fr);
+    }
+    &__item {
+      text-align: center;
+      display: block;
+      color: $text-color;
+      text-decoration: none;
+      font-size: 0.8rem;
+      text-transform: capitalize;
+      img {
+        width: 30px;
+        height: 30px;
+      }
+      span {
+        margin-top: 0.4rem;
+        line-height: 1;
+        display: block;
+      }
+    }
+  }
+}
+
+%mobile-title-bar {
+  .mobile-title-bar {
+    width: 100%;
+    height: $mobile-title-bar-height;
+    // background-color: $bg-color;
+    z-index: 1040;
+    &.fixed {
+      position: fixed;
+      top: 0;
+    }
+    .container {
+      height: 100%;
+    }
+    &__content {
+      display: flex;
+      align-items: center;
+      height: 100%;
+
+      .arrow {
+        margin-right: 0.7rem;
+        color: $text-color;
+        text-decoration: none;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        border-radius: 50%;
+        justify-content: center;
+      }
+
+      .title {
+        font-size: 1.1em;
+        text-decoration: none;
+      }
+
+      .profile-img {
+        margin-right: 0.5rem;
+        .profile-picture {
+          @extend %profile-picture;
+        }
+      }
+    }
+  }
+}
+
+%profile-picture {
+  margin-bottom: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid $secondary;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  color: $text-color;
+  background-color: $white;
+  &.large {
+    width: 80px;
+    height: 80px;
+  }
+  &.xlarge {
+    width: 100px;
+    height: 100px;
+  }
+  &.full {
+    width: 120px;
+    height: 120px;
+  }
+  img {
+    border-radius: 50%;
+    width: 100%;
+  }
+}
+
+.profile-picture {
+  @extend %profile-picture;
+}
+
+// admin dashbaord layout
+.dashboard-layout {
+  background-color: $bg-color;
+  min-height: 100vh;
+  position: relative;
+
+  .dashboard-content {
+    &.padding {
+      padding-top: $mobile-title-bar-height;
+      @include media-breakpoint-up(lg) {
+        padding-top: 0;
+      }
+    }
+  }
+
+  @extend %mobile-nav;
+
+  @extend %mobile-title-bar;
+}
+
+.top-title-container {
+  height: $top-title-container;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  z-index: calc(#{$zindex-tooltip} + 50);
+}
+
+.mobile-search-container {
+  padding-top: calc(#{$top-title-container} + 1rem);
+  padding-bottom: 1rem;
+  width: 100%;
+  z-index: calc(#{$zindex-tooltip} + 40);
+}
+
+.page-content {
+  &.mobile {
+    padding-top: 50px;
+    // padding-top: calc(#{$top-title-container} + 5rem);
+    padding-bottom: calc(#{$mobile-nav-height} + 3rem);
+  }
+}

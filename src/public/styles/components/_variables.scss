@@ -1,0 +1,52 @@
+$primary: #f48120;
+$secondary: #17b28d;
+$secondary-dark: darken($secondary, 20%);
+$bg-color: #f4f4f4;
+$text-color: #808184;
+
+$button-border-radius: 12px;
+$card-border-radius: 18px;
+
+$mobile-title-bar-height: 70px;
+$mobile-nav-height: 75px;
+$top-title-container: 100px;
+
+%top-panel-radius {
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+%bottom-panel-radius {
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+// $theme-colors: (
+//   "primary": $primary,
+//   "secondary": $secondary
+// );
+
+$custom-colors: (
+  "font-color": $text-color,
+  "primary": $primary,
+  "secondary": $secondary,
+  "background": $bg-color,
+  "background-darker": darken($bg-color, 10%),
+  "white": $white
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+$image-hone-one: url("/images/bg-image.png");
+
+.rounded-lg {
+  border-radius: 18px !important;
+}
+
+.font-xl {
+  font-size: 2.4rem;
+}
+
+.w-60 {
+  width: 60%;
+}

@@ -1,0 +1,10 @@
+.form-control {
+  border-radius: $button-border-radius;
+  padding: calc(#{$btn-padding-y-lg} + 4px) $btn-padding-x-lg;
+  color: $text-color;
+  border: none;
+  &:focus {
+    border-color: none;
+    box-shadow: none;
+  }
+}

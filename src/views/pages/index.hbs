@@ -1,0 +1,43 @@
+{{#> components/wrapper class="bg-img-one"}}
+
+  <div class="web-intro-card mx-auto d-none d-md-block">
+    <div class="card bg-background">
+      <div class="card-body">
+        <div class="text-center mt-3">
+          {{> components/logo}}
+        </div>
+        <div class="mt-3 text-center">
+          <p class="mb-0 text-font-color">Everyone deserves <br /> affordabale properties</p>
+        </div>
+        <div class="d-grid mt-5 mb-3 px-5">  
+          <a href="/signup" role="button" class="btn btn-primary fw-bolder">Sign up</a>
+        </div>
+        <div class="text-font-color text-center d-flex align-items-center justify-content-center mb-5">
+          <p class="mb-0 me-2">Already have an account?</p>
+          <a href="/login" class="link-font-color text-decoration-none fw-bolder">Sign In</a>
+        </div>
+        <div class="text-font-color text-center d-flex align-items-center justify-content-center my-3">
+          <p class="mb-0 me-2 small">www.landshop.ng</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {{!-- mobile --}}
+  <div class="d-md-none mt-auto">
+    <div class="mb-5 text-center">
+      {{> components/logo logo="/images/Logo-white.png"}}
+    </div>
+    <div class="text-center my-5 text-white">
+      <p>Everyone deserves <br class="d-block d-sm-none" /> affordabale properties</p>
+    </div>
+    <div class="py-5"></div>
+    <div class="d-grid mt-5 mb-4 px-3">  
+      <a href="/signup" role="button" class="btn btn-primary fw-bolder">Sign up</a>
+    </div>
+    <div class="text-white text-center d-flex align-items-center justify-content-center mb-5">
+      <p class="mb-0 me-2">Already have an account?</p>
+      <a href="/login" class="link-secondary text-white text-decoration-none fw-bolder">Sign In</a>
+    </div>
+  </div>
+{{/components/wrapper}}
