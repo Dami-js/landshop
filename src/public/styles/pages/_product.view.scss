@@ -4,7 +4,7 @@ $banner-height: 230px;
   //page
   &-page {
     //mobile
-    &.mobile {
+    .mobile {
       .banner {
         height: $banner-height;
         position: relative;

@@ -17,6 +17,10 @@
   font-size: 2.4rem;
 }
 
+.w-60 {
+  width: 60%;
+}
+
 /*!
  * Bootstrap v5.0.0-beta1 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
@@ -11187,11 +11191,16 @@ textarea.form-control-lg {
 .btn-sm, .btn-group-sm > .btn {
   padding: 0.25rem 0.5rem;
 }
-.btn-primary, .btn-secondary {
+.btn-primary, .btn-secondary, .btn-font-color {
   color: #fff;
 }
-.btn-primary:focus, .btn-primary:active, .btn-secondary:focus, .btn-secondary:active {
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active, .btn-font-color:hover, .btn-font-color:focus, .btn-font-color:active {
   color: #fff;
+}
+
+.btn-outline-font-color.selected {
+  color: #fff;
+  background-color: #808184;
 }
 
 .form-control {
@@ -11460,19 +11469,19 @@ i.edit {
   height: 100%;
 }
 
-.product-view-page.mobile .banner {
+.product-view-page .mobile .banner {
   height: 230px;
   position: relative;
   background-color: #000;
 }
-.product-view-page.mobile .banner .product-name {
+.product-view-page .mobile .banner .product-name {
   position: absolute;
   bottom: 44px;
   width: 100%;
   left: 0;
   z-index: 5;
 }
-.product-view-page.mobile .banner .product-img {
+.product-view-page .mobile .banner .product-img {
   object-fit: cover;
   opacity: 0.6;
   width: 100%;

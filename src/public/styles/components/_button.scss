@@ -5,11 +5,18 @@
     padding: $btn-padding-y-sm $btn-padding-x-sm;
   }
   &-primary,
-  &-secondary {
+  &-secondary,
+  &-font-color {
     color: $white;
+    &:hover,
     &:focus,
     &:active {
       color: $white;
     }
   }
+}
+
+.btn-outline-font-color.selected {
+  color: $white;
+  background-color: $text-color;
 }

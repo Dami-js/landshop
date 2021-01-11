@@ -1,4 +1,159 @@
 {{#> components/dashboard-layout class="product-view-page mobile"}}
+
+  <div class="container py-5 d-none d-lg-block">
+    <p class="fs-4 text-font-color text-center mb-0">House</p>
+  </div>
+
+  <div class="d-none d-lg-block pb-5">
+    <div class="container">
+      <div class="w-75 mx-auto">
+        {{> components/search-bar placeholder="Location"}}
+      </div>
+    </div>
+  </div>
+
+  <div class="about-product py-5 d-none d-lg-block">
+    <div class="container">
+      <div class="row">
+        
+        <div class="col-lg-5">
+          <div class="spec-section h-100">
+            <div class="card border-0 p-3 h-100">
+              <div class="py-3 px-5 text-black-50 border-bottom">
+                <p class="fs-4 mb-1">Celebrity Haven</p>
+                <p class="mb-1 small">(Lekki Free Trade Zone) Iba-Oloja</p>
+                <p class="mb-1 small text-secondary">Excision</p>
+              </div>
+              {{!--  --}}
+              <div class="py-3 px-5 border-bottom">
+                <div class="d-flex py-2 text-font-color justify-content-between">
+                  <p class="mb-0 w-40">Plots</p>
+                  <p class="mb-0 fw-bolder text-start w-60">10000 plot(s) - ₦ 3,000,000/plot</p>
+                </div>
+                <div class="d-flex py-2 text-font-color justify-content-between">
+                  <p class="mb-0 w-40">Sqms</p>
+                  <p class="mb-0 fw-bolder text-start w-60">100000 sqm(s) - ₦ 5,000/sqm</p>
+                </div>
+                <div class="d-flex py-2 text-font-color justify-content-between">
+                  <p class="mb-0 w-40">Title</p>
+                  <p class="mb-0 fw-bolder text-start w-60">Excision</p>
+                </div>
+                <div class="d-flex py-2 text-font-color justify-content-between">
+                  <p class="mb-0 w-40">Address</p>
+                  <p class="mb-0 fw-bolder text-start w-60">Iba-Oloja, Ibeju-Lekki, Nigeria</p>
+                </div>
+              </div>
+              {{!--  --}}
+              <div class="py-3 px-5 border-bottom">
+                <p class="text-font-color fw-bolder">Neighbourhood</p>
+                <p class="text-font-color mb-1">Dangote Refinery</p>
+                <p class="text-font-color mb-1">Lekki Free Trade Zone (LFTZ)</p>
+                <p class="text-font-color mb-1">Lekki Deep Sea port</p>
+                <p class="text-font-color mb-1">Power oil co.</p>
+              </div>
+              {{!--  --}}
+              <div class="d-grid px-5 mt-3">
+                <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#buyModal">Buy House</button>
+              </div>
+              {{!--  --}}
+              <div class="mt-3 py-3 px-5">
+                <p class="text-font-color">What do you want to buy?</p>
+                <div class="row">
+                  <div class="col-6">
+                    <div class="d-grid">
+                      <button class="btn btn-outline-font-color">Plots</button>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="d-grid">
+                      <button class="btn btn-outline-font-color selected">Slot</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {{!--  --}}
+              <div class="py-2 px-5">
+                <p class="text-font-color">How many plots ?</p>
+                <div class="row">
+                  <div class="col-6">
+                    <div class="d-grid">
+                      <input type="text" class="form-control border border-font-color" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-7">
+          <div class="features-section h-100 d-flex flex-column">
+            <p class="text-font-color">Celebrity Haven is located in Iba-oloja, Ibeju-Lekki within the most sought-after investment destination.</p>
+            <p class="text-font-color"> It is positioned to provide the infrastructural landscape that aids further development of the entertainment industry. The plan includes movie, animation, and music studios, with iconic architecture, exquisite and exclusive living spaces, and serene environment to aid beautiful productions. Just like Hollywood, California, Celebrity Haven will provide an ideal environment to incubate entertainment projects and provide a home for the stars of the industry.</p>
+            <div class="mt-3">
+              <img src="/images/House-Image.png" class="img-fluid" alt="">
+            </div>
+            <div class="mt-4">
+              <div class=" bg-primary">
+                <p class="text-white fw-bolder p-3">Features</p>
+                <div class="product-features">
+                  {{> components/product-feature image="/images/street-light.png" name="Street Lights"}}
+
+                  {{> components/product-feature image="/images/shopping-mall.png" name="Modern Shopping Malls"}}
+
+                  {{> components/product-feature image="/images/central-electric.png" name="Central Electricity Connection"}}
+
+                  {{> components/product-feature image="/images/central-sewage.png" name="Central Sewage"}}
+
+                  {{> components/product-feature image="/images/paved-road.png" name="Paved Roads"}}
+
+                  {{> components/product-feature image="/images/recreational.png" name="Recreational Facilities"}}
+
+                  {{> components/product-feature image="/images/electonic-state.png" name="Electronic Estate Gate"}}
+
+                  {{> components/product-feature image="/images/street-camera.png" name="Street Cameras (CCTV)"}}
+                  
+                </div>
+              </div>
+            </div>
+            {{!--  --}}
+            <div class="mt-auto">
+              <div class="pt-3">
+                <p class="text-font-color fw-bolder mb-0">Would you like to pay now or have our agent contact you ?</p>
+                <div class="">
+                  <div class="row gy-2 align-items-end">
+                    <div class="col-xl-8">
+                      <div class="row g-3">
+                        <div class="col-6">
+                          <div class="d-grid">
+                            <button class="btn btn-primary">Pay Now</button>
+                          </div>
+                        </div>
+                        <div class="col-6">
+                          <div class="d-grid">
+                            <button class="btn btn-secondary">I want to be contacted</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    {{!--  --}}
+                    <div class="col-xl-4">
+                      <p class="text-font-color mb-0 text-end">Total</p>
+                      <p class="text-secondary fw-bold fs-2 mb-0 text-end">₦ 3,000,000</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="mobile">
+
     <div class="banner">
       <img src="/images/House-Image.png" class="product-img" alt="">
       {{> components/mobile-title-bar img="https://picsum.photos/id/1027/40" title="House" back="/house" font-color="text-white" position="fixed" id="productView" }}
@@ -80,6 +235,7 @@
     </div>
   </div>
   
+  </div>
 {{/components/dashboard-layout}}
 
 {{> components/modals/buy-house-modal}}
