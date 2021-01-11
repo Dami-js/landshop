@@ -1,6 +1,6 @@
 .card {
   &.login-form-card {
-    border-radius: $card-border-radius;
+    border-radius: calc(#{$card-border-radius} + 10px);
     background-color: #ffffff4f;
   }
 }

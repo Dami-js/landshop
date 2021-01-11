@@ -1,5 +1,6 @@
 $primary: #f48120;
 $secondary: #17b28d;
+$secondary-dark: darken($secondary, 20%);
 $bg-color: #f4f4f4;
 $text-color: #808184;
 
@@ -30,6 +31,7 @@ $custom-colors: (
   "primary": $primary,
   "secondary": $secondary,
   "background": $bg-color,
+  "background-darker": darken($bg-color, 10%),
   "white": $white
 );
 

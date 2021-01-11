@@ -1,18 +1,30 @@
 {{#> components/dashboard-layout class="land-page "}}
-  <div class="bg-secondary top-title-container position-fixed">
+  <div class="bg-secondary top-title-container position-fixed d-lg-none">
     {{> components/mobile-title-bar img="https://picsum.photos/id/1027/40" title="Land" font-color="text-white" }}
   </div>
 
-  <div class="mobile-search-container position-fixed bg-background">
+  <div class="mobile-search-container position-fixed bg-background d-lg-none">
     <div class="container">
       {{> components/search-bar placeholder="Location"}}
     </div>
   </div>
 
-  <div class="page-content mobile">
+  <div class="container py-5">
+    <p class="fs-4 text-font-color text-center mb-0">Land</p>
+  </div>
+
+  <div class="d-none d-lg-block pb-5">
+    <div class="container">
+      <div class="w-75 mx-auto">
+        {{> components/search-bar placeholder="Location"}}
+      </div>
+    </div>
+  </div>
+
+  <div class="page-content d-none d-lg-block">
     <div class="container">
       <div class="row g-3">
-        <div class="col-md-6">
+        <div class="col-md-6 col-lg-3">
           <a href="/land-view" class=" text-decoration-none">
           {{> components/product-card 
             name="celebrity haven" 
@@ -25,7 +37,7 @@
             size-name="sqm"}}
           </a>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 col-lg-3">
           <a href="/land-view" class=" text-decoration-none">
           {{> components/product-card 
             name="celebrity haven" 
@@ -38,7 +50,7 @@
             size-name="sqm"}}
           </a>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 col-lg-3">
           <a href="/land-view" class=" text-decoration-none">
           {{> components/product-card 
             name="celebrity haven" 
@@ -51,7 +63,67 @@
             size-name="sqm"}}
           </a>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 col-lg-3">
+          <a href="/land-view" class=" text-decoration-none">
+          {{> components/product-card 
+            name="celebrity haven" 
+            address="(Lekki Free Trade Zone) Iba-Oloja" 
+            image="/images/Land-Image.png" 
+            slug="Excision" 
+            qty-price="N3,000,000" 
+            qty-name="plot" 
+            size-price="N5,000" 
+            size-name="sqm"}}
+          </a>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="page-content mobile d-lg-none">
+    <div class="container">
+      <div class="row g-3">
+        <div class="col-md-6 col-lg-3">
+          <a href="/land-view" class=" text-decoration-none">
+          {{> components/product-card 
+            name="celebrity haven" 
+            address="(Lekki Free Trade Zone) Iba-Oloja" 
+            image="/images/Land-Image.png" 
+            slug="Excision" 
+            qty-price="N3,000,000" 
+            qty-name="plot" 
+            size-price="N5,000" 
+            size-name="sqm"}}
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <a href="/land-view" class=" text-decoration-none">
+          {{> components/product-card 
+            name="celebrity haven" 
+            address="(Lekki Free Trade Zone) Iba-Oloja" 
+            image="/images/Land-Image.png" 
+            slug="Excision" 
+            qty-price="N3,000,000" 
+            qty-name="plot" 
+            size-price="N5,000" 
+            size-name="sqm"}}
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <a href="/land-view" class=" text-decoration-none">
+          {{> components/product-card 
+            name="celebrity haven" 
+            address="(Lekki Free Trade Zone) Iba-Oloja" 
+            image="/images/Land-Image.png" 
+            slug="Excision" 
+            qty-price="N3,000,000" 
+            qty-name="plot" 
+            size-price="N5,000" 
+            size-name="sqm"}}
+          </a>
+        </div>
+        <div class="col-md-6 col-lg-3">
           <a href="/land-view" class=" text-decoration-none">
           {{> components/product-card 
             name="celebrity haven" 

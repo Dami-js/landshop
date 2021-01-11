@@ -47,6 +47,7 @@
   --bs-dark: #212529;
   --bs-font-color: #808184;
   --bs-background: #f4f4f4;
+  --bs-background-darker: #dbdbdb;
   --bs-white: #fff;
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
@@ -3182,6 +3183,36 @@ textarea.form-control-lg {
   border-color: #f4f4f4;
 }
 
+.btn-background-darker {
+  color: #000;
+  background-color: #dbdbdb;
+  border-color: #dbdbdb;
+}
+.btn-background-darker:hover {
+  color: #000;
+  background-color: #e0e0e0;
+  border-color: #dfdfdf;
+}
+.btn-check:focus + .btn-background-darker, .btn-background-darker:focus {
+  color: #000;
+  background-color: #e0e0e0;
+  border-color: #dfdfdf;
+  box-shadow: 0 0 0 0.25rem rgba(186, 186, 186, 0.5);
+}
+.btn-check:checked + .btn-background-darker, .btn-check:active + .btn-background-darker, .btn-background-darker:active, .btn-background-darker.active, .show > .btn-background-darker.dropdown-toggle {
+  color: #000;
+  background-color: #e2e2e2;
+  border-color: #dfdfdf;
+}
+.btn-check:checked + .btn-background-darker:focus, .btn-check:active + .btn-background-darker:focus, .btn-background-darker:active:focus, .btn-background-darker.active:focus, .show > .btn-background-darker.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.25rem rgba(186, 186, 186, 0.5);
+}
+.btn-background-darker:disabled, .btn-background-darker.disabled {
+  color: #000;
+  background-color: #dbdbdb;
+  border-color: #dbdbdb;
+}
+
 .btn-white {
   color: #000;
   background-color: #fff;
@@ -3459,6 +3490,31 @@ textarea.form-control-lg {
 }
 .btn-outline-background:disabled, .btn-outline-background.disabled {
   color: #f4f4f4;
+  background-color: transparent;
+}
+
+.btn-outline-background-darker {
+  color: #dbdbdb;
+  border-color: #dbdbdb;
+}
+.btn-outline-background-darker:hover {
+  color: #000;
+  background-color: #dbdbdb;
+  border-color: #dbdbdb;
+}
+.btn-check:focus + .btn-outline-background-darker, .btn-outline-background-darker:focus {
+  box-shadow: 0 0 0 0.25rem rgba(219, 219, 219, 0.5);
+}
+.btn-check:checked + .btn-outline-background-darker, .btn-check:active + .btn-outline-background-darker, .btn-outline-background-darker:active, .btn-outline-background-darker.active, .btn-outline-background-darker.dropdown-toggle.show {
+  color: #000;
+  background-color: #dbdbdb;
+  border-color: #dbdbdb;
+}
+.btn-check:checked + .btn-outline-background-darker:focus, .btn-check:active + .btn-outline-background-darker:focus, .btn-outline-background-darker:active:focus, .btn-outline-background-darker.active:focus, .btn-outline-background-darker.dropdown-toggle.show:focus {
+  box-shadow: 0 0 0 0.25rem rgba(219, 219, 219, 0.5);
+}
+.btn-outline-background-darker:disabled, .btn-outline-background-darker.disabled {
+  color: #dbdbdb;
   background-color: transparent;
 }
 
@@ -4798,6 +4854,15 @@ textarea.form-control-lg {
   color: #4e4e4e;
 }
 
+.alert-background-darker {
+  color: #585858;
+  background-color: #f8f8f8;
+  border-color: #f4f4f4;
+}
+.alert-background-darker .alert-link {
+  color: #464646;
+}
+
 .alert-white {
   color: #666666;
   background-color: white;
@@ -5202,6 +5267,20 @@ textarea.form-control-lg {
   color: #fff;
   background-color: #626262;
   border-color: #626262;
+}
+
+.list-group-item-background-darker {
+  color: #585858;
+  background-color: #f8f8f8;
+}
+.list-group-item-background-darker.list-group-item-action:hover, .list-group-item-background-darker.list-group-item-action:focus {
+  color: #585858;
+  background-color: #dfdfdf;
+}
+.list-group-item-background-darker.list-group-item-action.active {
+  color: #fff;
+  background-color: #585858;
+  border-color: #585858;
 }
 
 .list-group-item-white {
@@ -6167,6 +6246,13 @@ textarea.form-control-lg {
   color: #f6f6f6;
 }
 
+.link-background-darker {
+  color: #dbdbdb;
+}
+.link-background-darker:hover, .link-background-darker:focus {
+  color: #e2e2e2;
+}
+
 .link-white {
   color: #fff;
 }
@@ -6559,6 +6645,10 @@ textarea.form-control-lg {
 
 .border-background {
   border-color: #f4f4f4 !important;
+}
+
+.border-background-darker {
+  border-color: #dbdbdb !important;
 }
 
 .border-white {
@@ -7355,6 +7445,10 @@ textarea.form-control-lg {
   color: #f4f4f4 !important;
 }
 
+.text-background-darker {
+  color: #dbdbdb !important;
+}
+
 .text-white {
   color: #fff !important;
 }
@@ -7433,6 +7527,10 @@ textarea.form-control-lg {
 
 .bg-background {
   background-color: #f4f4f4 !important;
+}
+
+.bg-background-darker {
+  background-color: #dbdbdb !important;
 }
 
 .bg-white {
@@ -11031,6 +11129,14 @@ textarea.form-control-lg {
   width: 80px;
   height: 80px;
 }
+.xlarge.profile-picture, .dashboard-layout .mobile-title-bar__content .profile-img .xlarge.profile-picture {
+  width: 100px;
+  height: 100px;
+}
+.full.profile-picture, .dashboard-layout .mobile-title-bar__content .profile-img .full.profile-picture {
+  width: 120px;
+  height: 120px;
+}
 .profile-picture img, .dashboard-layout .mobile-title-bar__content .profile-img .profile-picture img {
   border-radius: 50%;
   width: 100%;
@@ -11043,6 +11149,11 @@ textarea.form-control-lg {
 }
 .dashboard-layout .dashboard-content.padding {
   padding-top: 70px;
+}
+@media (min-width: 992px) {
+  .dashboard-layout .dashboard-content.padding {
+    padding-top: 0;
+  }
 }
 
 .top-title-container {
@@ -11065,7 +11176,7 @@ textarea.form-control-lg {
 }
 
 .page-content.mobile {
-  padding-top: calc(100px + 5rem);
+  padding-top: 50px;
   padding-bottom: calc(75px + 3rem);
 }
 
@@ -11095,7 +11206,7 @@ textarea.form-control-lg {
 }
 
 .card.login-form-card {
-  border-radius: 18px;
+  border-radius: calc(18px + 10px);
   background-color: #ffffff4f;
 }
 
@@ -11174,9 +11285,12 @@ textarea.form-control-lg {
   padding: 1.3rem 1.5rem;
 }
 .product-card .header p.name {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   text-transform: capitalize;
   font-weight: 500;
+}
+.product-card .header p.address {
+  font-size: 0.9rem;
 }
 .product-card .image-cont {
   height: 170px;
@@ -11190,13 +11304,17 @@ textarea.form-control-lg {
 }
 .product-card .footer p.slug {
   font-weight: 500;
+  font-size: 0.9rem;
 }
 .product-card .footer .price-cont {
   display: flex;
 }
 .product-card .footer .price-cont .price p:first-child {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 500;
+}
+.product-card .footer .price-cont .price p:last-child {
+  font-size: 1rem;
 }
 .product-card .footer .price-cont .price:first-child {
   margin-right: auto;
@@ -11224,8 +11342,7 @@ textarea.form-control-lg {
 
 .dashboard-page .mobile-balance-container {
   background-color: #17b28d;
-  min-height: 70vh;
-  margin-top: 3rem;
+  margin-top: auto;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
 }
@@ -11257,6 +11374,7 @@ textarea.form-control-lg {
 .user-details__head-bio p {
   margin-bottom: 0;
   color: #808184;
+  text-align: left;
 }
 .user-details__head-bio p.name {
   font-size: 1.8rem;
@@ -11273,11 +11391,13 @@ textarea.form-control-lg {
   display: flex;
   align-items: center;
   border-top: 1px solid #ced4da;
-  padding: 1rem 0;
+  padding: 0.7rem 0;
 }
 .user-details__body-row p {
   color: #808184;
+  text-align: left;
   margin-bottom: 0;
+  font-size: 0.8rem;
 }
 .user-details__body-row p:first-child {
   width: 35%;
@@ -11298,6 +11418,46 @@ i.edit {
 
 .balance-card {
   border-radius: 18px;
+}
+
+.desktop .hero-section {
+  display: flex;
+}
+.desktop .hero-section .user-details-section {
+  width: 13%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+}
+.desktop .hero-section .user-balance-section {
+  width: 20%;
+  padding: 0 1rem;
+  margin-left: auto;
+}
+.desktop .hero-section .user-balance-section .card {
+  text-align: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.desktop .hero-section .user-balance-section .card:last-child {
+  background-color: #0b5845;
+}
+.desktop .hero-section .banner-section {
+  width: 60%;
+}
+.desktop .hero-section .banner-section a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.desktop .hero-section .banner-section a img {
+  width: 100%;
+  height: 100%;
 }
 
 .product-view-page.mobile .banner {

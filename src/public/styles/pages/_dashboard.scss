@@ -1,8 +1,12 @@
 .dashboard-page {
   .mobile-balance-container {
     background-color: $secondary;
-    min-height: 70vh;
-    margin-top: 3rem;
+    // position: fixed;
+    // width: 100%;
+    // bottom: 0;
+    margin-top: auto;
+    // min-height: 70vh;
+    // margin-top: 3rem;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
     .mobile-balance-content {
@@ -36,6 +40,7 @@
       p {
         margin-bottom: 0;
         color: $text-color;
+        text-align: left;
         &.name {
           font-size: 1.8rem;
           line-height: 1;
@@ -56,10 +61,12 @@
       display: flex;
       align-items: center;
       border-top: 1px solid $gray-400;
-      padding: 1rem 0;
+      padding: 0.7rem 0;
       p {
         color: $text-color;
+        text-align: left;
         margin-bottom: 0;
+        font-size: 0.8rem;
         &:first-child {
           width: 35%;
           margin-right: auto;
@@ -83,4 +90,57 @@ i.edit {
 
 .balance-card {
   border-radius: $card-border-radius;
+}
+
+.desktop {
+  .hero-section {
+    display: flex;
+
+    .user-details-section {
+      width: 13%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      // padding: 0 2rem;
+      text-align: center;
+    }
+
+    .user-balance-section {
+      width: 20%;
+      padding: 0 1rem;
+      margin-left: auto;
+      .card {
+        text-align: center;
+        color: $white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        // height: 150px;
+        // height: auto;
+        // &:first-child {
+        //   margin-bottom: 2rem;
+        // }
+        &:last-child {
+          background-color: $secondary-dark;
+        }
+        // height: calc(50% - 1rem);
+      }
+    }
+
+    .banner-section {
+      width: 60%;
+      a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        img {
+          width: 100%;
+          // object-fit: cover;
+          height: 100%;
+        }
+      }
+    }
+  }
 }
